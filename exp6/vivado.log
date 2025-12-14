@@ -1,0 +1,102 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Apr 25 11:39:32 2025
+# Process ID         : 2936
+# Current directory  : D:/coding/computer_organization/exp/exp6
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent2820 D:\coding\computer_organization\exp\exp6\exp6.xpr
+# Log file           : D:/coding/computer_organization/exp/exp6/vivado.log
+# Journal file       : D:/coding/computer_organization/exp/exp6\vivado.jou
+# Running On         : Celore
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 7735H with Radeon Graphics
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16368 MB
+# Swap memory        : 15569 MB
+# Total Virtual      : 31937 MB
+# Available Virtual  : 17370 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/coding/computer_organization/exp/exp6/exp6.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/coding/computer_organization/exp/ip/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/coding/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1331.414 ; gain = 225.281
+update_compile_order -fileset sources_1
+open_bd_design {D:/coding/computer_organization/exp/exp6/exp6.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <D:/coding/computer_organization/exp/exp6/exp6.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- educg.net:user:cg_fpga:1.4 - cg_fpga_0
+Adding component instance block -- xilinx.com:module_ref:adpt_in:1.0 - adpt_in_0
+Adding component instance block -- xilinx.com:module_ref:adpt_out:1.0 - adpt_out_0
+Adding component instance block -- xilinx.com:module_ref:m7482:1.0 - m7482_0
+Adding component instance block -- xilinx.com:module_ref:m7482:1.0 - m7482_1
+Adding component instance block -- xilinx.com:module_ref:dff4:1.0 - dff4_0
+Adding component instance block -- xilinx.com:module_ref:xor2:1.0 - xor2_0
+Adding component instance block -- xilinx.com:module_ref:xor2:1.0 - xor2_1
+Adding component instance block -- xilinx.com:module_ref:xor2:1.0 - xor2_2
+Adding component instance block -- xilinx.com:module_ref:xor2:1.0 - xor2_3
+Adding component instance block -- xilinx.com:module_ref:xor2:1.0 - xor2_4
+Successfully read diagram <design_1> from block design file <D:/coding/computer_organization/exp/exp6/exp6.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1468.793 ; gain = 95.699
+set_property location {7 1370 622} [get_bd_cells cg_fpga_0]
+set_property location {7 1398 743} [get_bd_cells cg_fpga_0]
+set_property location {8.5 2030 591} [get_bd_cells xor2_0]
+set_property location {8.5 1944 590} [get_bd_cells xor2_0]
+set_property location {9 1937 598} [get_bd_cells xor2_0]
+set_property location {9 1943 713} [get_bd_cells xor2_1]
+set_property location {9 1960 499} [get_bd_cells xor2_0]
+set_property location {9 1976 624} [get_bd_cells xor2_1]
+set_property location {9 1976 639} [get_bd_cells xor2_1]
+set_property location {9 1970 619} [get_bd_cells xor2_1]
+set_property location {9 1960 740} [get_bd_cells xor2_2]
+set_property location {9 1970 886} [get_bd_cells xor2_3]
+set_property location {8 1968 879} [get_bd_cells xor2_3]
+set_property location {8.5 2392 631} [get_bd_cells m7482_0]
+set_property location {8.5 2627 674} [get_bd_cells dff4_0]
+set_property location {7 2345 989} [get_bd_cells m7482_1]
+set_property location {6.5 2460 515} [get_bd_cells xor2_4]
+set_property location {7.5 3195 813} [get_bd_cells adpt_out_0]
+set_property location {0.5 1192 812} [get_bd_cells adpt_out_0]
+set_property location {1 1214 925} [get_bd_cells adpt_out_0]
+set_property location {3 1756 1062} [get_bd_cells adpt_in_0]
+set_property location {3 1750 1043} [get_bd_cells adpt_in_0]
+set_property location {3 1754 1073} [get_bd_cells adpt_in_0]
+set_property location {4 2018 1192} [get_bd_cells xor2_3]
+set_property location {4 2005 1304} [get_bd_cells xor2_3]
+set_property location {4 2013 1169} [get_bd_cells xor2_2]
+set_property location {4 2028 1021} [get_bd_cells xor2_1]
+set_property location {4 2062 892} [get_bd_cells xor2_0]
+set_property location {5 2286 1225} [get_bd_cells m7482_1]
+set_property location {5 2258 1265} [get_bd_cells m7482_1]
+set_property location {5 2248 1285} [get_bd_cells m7482_1]
+set_property location {5 2268 920} [get_bd_cells m7482_0]
+set_property location {5 2242 901} [get_bd_cells m7482_0]
+set_property location {5 2243 889} [get_bd_cells m7482_0]
+set_property location {6.5 2547 936} [get_bd_cells xor2_4]
+set_property location {6 2530 1386} [get_bd_cells xor2_4]
+set_property location {6 2507 884} [get_bd_cells dff4_0]
+set_property location {6 2557 903} [get_bd_cells dff4_0]
+set_property location {6 2550 907} [get_bd_cells dff4_0]
+set_property location {6 2553 920} [get_bd_cells dff4_0]
+set_property location {6 2527 606} [get_bd_cells xor2_4]
+set_property location {6 2567 1203} [get_bd_cells xor2_4]
+set_property location {6 2564 1244} [get_bd_cells xor2_4]
+set_property location {6 2562 1269} [get_bd_cells xor2_4]
+set_property location {6 2538 1215} [get_bd_cells xor2_4]
+set_property location {6 2589 832} [get_bd_cells xor2_4]
+set_property location {6 2539 1205} [get_bd_cells dff4_0]
+set_property location {6 2546 1238} [get_bd_cells dff4_0]
+set_property location {6 2549 1249} [get_bd_cells dff4_0]
+set_property location {6 2545 1260} [get_bd_cells dff4_0]
+set_property location {6 2550 1267} [get_bd_cells dff4_0]
+set_property location {6 2544 870} [get_bd_cells xor2_4]
+set_property location {6 2551 900} [get_bd_cells xor2_4]
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 25 11:47:34 2025...

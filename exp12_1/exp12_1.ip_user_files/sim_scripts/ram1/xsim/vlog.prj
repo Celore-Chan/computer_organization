@@ -1,0 +1,10 @@
+verilog blk_mem_gen_v8_4_9 --include "D:/coding/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
+"../../../ipstatic/simulation/blk_mem_gen_v8_4.v" \
+
+verilog xil_defaultlib --include "D:/coding/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
+"../../../../exp12_1.gen/sources_1/ip/ram1/sim/ram1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

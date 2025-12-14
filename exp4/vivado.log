@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Mar 20 10:44:22 2025
+# Process ID         : 8888
+# Current directory  : D:/coding/computer_organization/exp/exp4
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent14796 D:\coding\computer_organization\exp\exp4\exp4.xpr
+# Log file           : D:/coding/computer_organization/exp/exp4/vivado.log
+# Journal file       : D:/coding/computer_organization/exp/exp4\vivado.jou
+# Running On         : Celore
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 7735H with Radeon Graphics
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16368 MB
+# Swap memory        : 16368 MB
+# Total Virtual      : 32737 MB
+# Available Virtual  : 21784 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/coding/computer_organization/exp/exp4/exp4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/coding/computer_organization/exp/ip/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/coding/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994.
+open_project: Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 1368.309 ; gain = 244.988
+open_bd_design {D:/coding/computer_organization/exp/exp4/exp4.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <D:/coding/computer_organization/exp/exp4/exp4.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- educg.net:user:cg_fpga:1.4 - cg_fpga_0
+Adding component instance block -- xilinx.com:module_ref:and2:1.0 - and2_0
+Adding component instance block -- xilinx.com:module_ref:and2:1.0 - and2_1
+Adding component instance block -- xilinx.com:module_ref:and2:1.0 - and2_2
+Adding component instance block -- xilinx.com:module_ref:and2:1.0 - and2_3
+Adding component instance block -- xilinx.com:module_ref:and2:1.0 - and2_4
+Adding component instance block -- xilinx.com:module_ref:and2:1.0 - and2_5
+Adding component instance block -- xilinx.com:module_ref:and2:1.0 - and2_6
+Adding component instance block -- xilinx.com:module_ref:adpt_in:1.0 - adpt_in_0
+Adding component instance block -- xilinx.com:module_ref:and2:1.0 - and2_7
+Adding component instance block -- xilinx.com:module_ref:and2:1.0 - and2_8
+Adding component instance block -- xilinx.com:module_ref:and2:1.0 - and2_9
+Adding component instance block -- xilinx.com:module_ref:and2:1.0 - and2_10
+Adding component instance block -- xilinx.com:module_ref:and2:1.0 - and2_11
+Adding component instance block -- xilinx.com:module_ref:or3:1.0 - or3_0
+Adding component instance block -- xilinx.com:module_ref:or3:1.0 - or3_1
+Adding component instance block -- xilinx.com:module_ref:or3:1.0 - or3_2
+Adding component instance block -- xilinx.com:module_ref:or3:1.0 - or3_3
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:module_ref:adpt_out:1.0 - adpt_out_0
+Successfully read diagram <design_1> from block design file <D:/coding/computer_organization/exp/exp4/exp4.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1518.375 ; gain = 109.316
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 20 10:55:00 2025...

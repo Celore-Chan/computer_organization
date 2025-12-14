@@ -1,0 +1,238 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../exp9.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "cg_fpga_0": "",
+      "adpt_in_0": "",
+      "DECL7SEG_0": "",
+      "CNT4B_0": "",
+      "adpt_out_0": ""
+    },
+    "components": {
+      "cg_fpga_0": {
+        "vlnv": "educg.net:user:cg_fpga:1.4",
+        "ip_revision": "5",
+        "xci_name": "design_1_cg_fpga_0_0",
+        "xci_path": "ip\\design_1_cg_fpga_0_0\\design_1_cg_fpga_0_0.xci",
+        "inst_hier_path": "cg_fpga_0"
+      },
+      "adpt_in_0": {
+        "vlnv": "xilinx.com:module_ref:adpt_in:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_adpt_in_0_0",
+        "xci_path": "ip\\design_1_adpt_in_0_0\\design_1_adpt_in_0_0.xci",
+        "inst_hier_path": "adpt_in_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "adpt_in",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sw_a": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "btn_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "btn_rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "btn_rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "ena": {
+            "direction": "O"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "O",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "O"
+          }
+        }
+      },
+      "DECL7SEG_0": {
+        "vlnv": "xilinx.com:module_ref:DECL7SEG:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_DECL7SEG_0_0",
+        "xci_path": "ip\\design_1_DECL7SEG_0_0\\design_1_DECL7SEG_0_0.xci",
+        "inst_hier_path": "DECL7SEG_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "DECL7SEG",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "LED7S": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          }
+        }
+      },
+      "CNT4B_0": {
+        "vlnv": "xilinx.com:module_ref:CNT4B:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_CNT4B_0_0",
+        "xci_path": "ip\\design_1_CNT4B_0_0\\design_1_CNT4B_0_0.xci",
+        "inst_hier_path": "CNT4B_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CNT4B",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RST",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_adpt_in_0_0_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "ENA": {
+            "direction": "I"
+          },
+          "OUTY": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "COUT": {
+            "direction": "O"
+          }
+        }
+      },
+      "adpt_out_0": {
+        "vlnv": "xilinx.com:module_ref:adpt_out:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_adpt_out_0_0",
+        "xci_path": "ip\\design_1_adpt_out_0_0\\design_1_adpt_out_0_0.xci",
+        "inst_hier_path": "adpt_out_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "adpt_out",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "LED7S": {
+            "direction": "I",
+            "left": "6",
+            "right": "0"
+          },
+          "seg_cs": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "seg_data": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "CNT4B_0_OUTY": {
+        "ports": [
+          "CNT4B_0/OUTY",
+          "DECL7SEG_0/A"
+        ]
+      },
+      "DECL7SEG_0_LED7S": {
+        "ports": [
+          "DECL7SEG_0/LED7S",
+          "adpt_out_0/LED7S"
+        ]
+      },
+      "adpt_in_0_clk": {
+        "ports": [
+          "adpt_in_0/clk",
+          "CNT4B_0/CLK"
+        ]
+      },
+      "adpt_in_0_ena": {
+        "ports": [
+          "adpt_in_0/ena",
+          "CNT4B_0/ENA"
+        ]
+      },
+      "adpt_in_0_rst": {
+        "ports": [
+          "adpt_in_0/rst",
+          "CNT4B_0/RST"
+        ]
+      },
+      "adpt_out_0_seg_cs": {
+        "ports": [
+          "adpt_out_0/seg_cs",
+          "cg_fpga_0/seg_cs"
+        ]
+      },
+      "adpt_out_0_seg_data": {
+        "ports": [
+          "adpt_out_0/seg_data",
+          "cg_fpga_0/seg_data"
+        ]
+      },
+      "cg_fpga_0_btn_clk": {
+        "ports": [
+          "cg_fpga_0/btn_clk",
+          "adpt_in_0/btn_clk"
+        ]
+      },
+      "cg_fpga_0_btn_rst": {
+        "ports": [
+          "cg_fpga_0/btn_rst",
+          "adpt_in_0/btn_rst"
+        ]
+      },
+      "cg_fpga_0_gpio_sw_2": {
+        "ports": [
+          "cg_fpga_0/gpio_sw_2",
+          "adpt_in_0/sw_a"
+        ]
+      }
+    }
+  }
+}

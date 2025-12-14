@@ -1,0 +1,38 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.916168",
+   "Default View_TopLeft":"330,-259",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace inst cg_fpga_0 -pg 1 -lvl 1 -x 130 -y -50 -defaultsOSRD
+preplace inst adpt_in_0 -pg 1 -lvl 2 -x 420 -y 30 -defaultsOSRD
+preplace inst not1_0 -pg 1 -lvl 3 -x 710 -y 20 -defaultsOSRD
+preplace inst and2_0 -pg 1 -lvl 4 -x 940 -y 110 -defaultsOSRD
+preplace inst and2_1 -pg 1 -lvl 4 -x 940 -y 230 -defaultsOSRD
+preplace inst ram_dp1_1Kx4_0 -pg 1 -lvl 5 -x 1220 -y -10 -defaultsOSRD
+preplace inst ram_dp1_1Kx4_1 -pg 1 -lvl 5 -x 1220 -y 150 -defaultsOSRD
+preplace inst mux2_1_4bits_0 -pg 1 -lvl 6 -x 1570 -y 70 -defaultsOSRD
+preplace inst adpt_out_0 -pg 1 -lvl 7 -x 1850 -y 90 -defaultsOSRD
+preplace netloc cg_fpga_0_gpio_sw_2 1 1 1 N 10
+preplace netloc cg_fpga_0_gpio_sw_1 1 1 1 280 -10n
+preplace netloc cg_fpga_0_btn_clk 1 1 1 290 -70n
+preplace netloc adpt_in_0_addr_10 1 2 4 630 110 830 300 N 300 1350
+preplace netloc not1_0_q 1 3 1 800 20n
+preplace netloc adpt_in_0_wren 1 2 2 550J 120 860
+preplace netloc and2_0_q 1 4 1 1020 0n
+preplace netloc adpt_in_0_data0 1 2 3 640 90 780J 10 1080J
+preplace netloc adpt_in_0_addr_9_0 1 2 3 570 80 810J 20 1090J
+preplace netloc adpt_in_0_clk 1 2 3 560 100 790J 30 1100J
+preplace netloc and2_1_q 1 4 1 1030 160n
+preplace netloc ram_dp1_1Kx4_0_q 1 5 1 1340 -10n
+preplace netloc ram_dp1_1Kx4_1_q 1 5 1 1340 70n
+preplace netloc mux2_1_4bits_0_q 1 6 1 N 70
+preplace netloc cg_fpga_0_clk_100M 1 1 6 270J 140 NJ 140 870J 40 1010J 240 NJ 240 1680
+preplace netloc adpt_out_0_seg_cs 1 0 8 -20 -250 NJ -250 NJ -250 NJ -250 NJ -250 NJ -250 NJ -250 1980
+preplace netloc adpt_out_0_seg_data 1 0 8 -10 -240 NJ -240 NJ -240 NJ -240 NJ -240 NJ -240 NJ -240 1990
+levelinfo -pg 1 -40 130 420 710 940 1220 1570 1850 2010
+pagesize -pg 1 -db -bbox -sgen -40 -440 2010 380
+"
+}
+

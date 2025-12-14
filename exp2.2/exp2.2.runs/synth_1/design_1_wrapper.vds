@@ -1,0 +1,514 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Mar  7 15:03:04 2025
+# Process ID         : 9868
+# Current directory  : D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1
+# Command line       : vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file           : D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/design_1_wrapper.vds
+# Journal file       : D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1\vivado.jou
+# Running On         : Celore
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 7735H with Radeon Graphics
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16368 MB
+# Swap memory        : 12348 MB
+# Total Virtual      : 28716 MB
+# Available Virtual  : 15396 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/coding/computer_organization/exp/ip/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/coding/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [Project 1-5578] Found utility IPs instantiated in block design D:/coding/computer_organization/exp/exp2.2/exp2.2.srcs/sources_1/bd/design_1/design_1.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994. 
+add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 419.547 ; gain = 48.520
+Command: synth_design -top design_1_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1492
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1129.926 ; gain = 465.441
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:309]
+INFO: [Synth 8-6157] synthesizing module 'design_1_adpt_in_0_0' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_adpt_in_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_adpt_in_0_0' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_adpt_in_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_adpt_out_0_0' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_adpt_out_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_adpt_out_0_0' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_adpt_out_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'calculator_imp_US8SAZ' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:235]
+INFO: [Synth 8-6157] synthesizing module 'design_1_and2_0_0' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and2_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_and2_0_0' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and2_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_and2_1_0' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and2_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_and2_1_0' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and2_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_and3_0_0' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_and3_0_0' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_and3_1_0' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_and3_1_0' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_and3_2_0' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_and3_2_0' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_not1_0_0' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_not1_0_0' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_not1_1_0' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_not1_1_0' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_not1_2_0' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_not1_2_0' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_or6_0_0' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_or6_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_or6_0_0' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_or6_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant' (0#1) [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (0#1) [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'calculator_imp_US8SAZ' (0#1) [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:235]
+INFO: [Synth 8-6157] synthesizing module 'calculator1_imp_CCGSJ5' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_and2_0_1' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and2_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_and2_0_1' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and2_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_and2_1_1' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and2_1_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_and2_1_1' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and2_1_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_and3_0_1' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_and3_0_1' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_and3_1_1' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_1_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_and3_1_1' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_1_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_and3_2_1' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_2_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_and3_2_1' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_2_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_not1_0_1' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_not1_0_1' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_not1_1_1' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_1_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_not1_1_1' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_1_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_not1_2_1' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_2_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_not1_2_1' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_2_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_or6_0_1' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_or6_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_or6_0_1' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_or6_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_1' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/synth/design_1_xlconstant_0_1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_1' (0#1) [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/synth/design_1_xlconstant_0_1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'calculator1_imp_CCGSJ5' (0#1) [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'calculator2_imp_637GZ8' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:87]
+INFO: [Synth 8-6157] synthesizing module 'design_1_and2_0_2' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and2_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_and2_0_2' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and2_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_and2_1_2' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and2_1_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_and2_1_2' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and2_1_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_and3_0_2' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_and3_0_2' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_and3_1_2' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_1_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_and3_1_2' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_1_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_and3_2_2' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_2_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_and3_2_2' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_2_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_not1_0_2' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_not1_0_2' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_not1_1_2' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_1_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_not1_1_2' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_1_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_not1_2_2' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_2_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_not1_2_2' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_2_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_or6_0_2' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_or6_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_or6_0_2' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_or6_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_2' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/synth/design_1_xlconstant_0_2.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_2' (0#1) [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/synth/design_1_xlconstant_0_2.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'calculator2_imp_637GZ8' (0#1) [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:87]
+INFO: [Synth 8-6157] synthesizing module 'calculator3_imp_PBRHZ' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:161]
+INFO: [Synth 8-6157] synthesizing module 'design_1_and2_0_3' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and2_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_and2_0_3' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and2_0_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_and2_1_3' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and2_1_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_and2_1_3' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and2_1_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_and3_0_3' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_and3_0_3' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_0_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_and3_1_3' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_1_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_and3_1_3' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_1_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_and3_2_3' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_2_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_and3_2_3' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_and3_2_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_not1_0_3' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_not1_0_3' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_0_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_not1_1_3' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_1_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_not1_1_3' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_1_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_not1_2_3' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_2_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_not1_2_3' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_not1_2_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_or6_0_3' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_or6_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_or6_0_3' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_or6_0_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_3' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_3/synth/design_1_xlconstant_0_3.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_3' (0#1) [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_3/synth/design_1_xlconstant_0_3.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'calculator3_imp_PBRHZ' (0#1) [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:161]
+INFO: [Synth 8-6157] synthesizing module 'design_1_cg_fpga_0_0' [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_cg_fpga_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_cg_fpga_0_0' (0#1) [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/.Xil/Vivado-9868-Celore/realtime/design_1_cg_fpga_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'DDR_addr' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'DDR_ba' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'DDR_cas_n' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'DDR_ck_n' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'DDR_ck_p' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'DDR_cke' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'DDR_cs_n' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'DDR_dm' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'DDR_dq' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'DDR_dqs_n' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'DDR_dqs_p' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'DDR_odt' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'DDR_ras_n' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'DDR_reset_n' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'DDR_we_n' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'FIXED_IO_ddr_vrn' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'FIXED_IO_ddr_vrp' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'FIXED_IO_mio' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'FIXED_IO_ps_clk' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'FIXED_IO_ps_porb' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'FIXED_IO_ps_srstb' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'btn' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'btn_clk' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'btn_rst' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'clk_100M' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'gpio_sw_1' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7071] port 'tx_0' of module 'design_1_cg_fpga_0_0' is unconnected for instance 'cg_fpga_0' [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+WARNING: [Synth 8-7023] instance 'cg_fpga_0' of module 'design_1_cg_fpga_0_0' has 42 connections declared, but only 15 given [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:378]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/synth/design_1.v:309]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1242.148 ; gain = 577.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1242.148 ; gain = 577.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1242.148 ; gain = 577.664
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1242.148 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_cg_fpga_0_0/design_1_cg_fpga_0_0/design_1_cg_fpga_0_0_in_context.xdc] for cell 'design_1_i/cg_fpga_0'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_cg_fpga_0_0/design_1_cg_fpga_0_0/design_1_cg_fpga_0_0_in_context.xdc] for cell 'design_1_i/cg_fpga_0'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_adpt_in_0_0/design_1_adpt_in_0_0/design_1_adpt_in_0_0_in_context.xdc] for cell 'design_1_i/adpt_in_0'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_adpt_in_0_0/design_1_adpt_in_0_0/design_1_adpt_in_0_0_in_context.xdc] for cell 'design_1_i/adpt_in_0'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_adpt_out_0_0/design_1_adpt_out_0_0/design_1_adpt_out_0_0_in_context.xdc] for cell 'design_1_i/adpt_out_0'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_adpt_out_0_0/design_1_adpt_out_0_0/design_1_adpt_out_0_0_in_context.xdc] for cell 'design_1_i/adpt_out_0'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_0_0/design_1_not1_0_0/design_1_not1_0_0_in_context.xdc] for cell 'design_1_i/calculator/not1_0'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_0_0/design_1_not1_0_0/design_1_not1_0_0_in_context.xdc] for cell 'design_1_i/calculator/not1_0'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_1_0/design_1_not1_1_0/design_1_not1_1_0_in_context.xdc] for cell 'design_1_i/calculator/not1_1'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_1_0/design_1_not1_1_0/design_1_not1_1_0_in_context.xdc] for cell 'design_1_i/calculator/not1_1'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_0_0/design_1_and3_0_0/design_1_and3_0_0_in_context.xdc] for cell 'design_1_i/calculator/and3_0'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_0_0/design_1_and3_0_0/design_1_and3_0_0_in_context.xdc] for cell 'design_1_i/calculator/and3_0'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and2_0_0/design_1_and2_0_0/design_1_and2_0_0_in_context.xdc] for cell 'design_1_i/calculator/and2_0'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and2_0_0/design_1_and2_0_0/design_1_and2_0_0_in_context.xdc] for cell 'design_1_i/calculator/and2_0'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and2_1_0/design_1_and2_1_0/design_1_and2_1_0_in_context.xdc] for cell 'design_1_i/calculator/and2_1'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and2_1_0/design_1_and2_1_0/design_1_and2_1_0_in_context.xdc] for cell 'design_1_i/calculator/and2_1'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_1_0/design_1_and3_1_0/design_1_and3_1_0_in_context.xdc] for cell 'design_1_i/calculator/and3_1'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_1_0/design_1_and3_1_0/design_1_and3_1_0_in_context.xdc] for cell 'design_1_i/calculator/and3_1'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_2_0/design_1_and3_2_0/design_1_and3_2_0_in_context.xdc] for cell 'design_1_i/calculator/and3_2'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_2_0/design_1_and3_2_0/design_1_and3_2_0_in_context.xdc] for cell 'design_1_i/calculator/and3_2'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_2_0/design_1_not1_2_0/design_1_not1_2_0_in_context.xdc] for cell 'design_1_i/calculator/not1_2'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_2_0/design_1_not1_2_0/design_1_not1_2_0_in_context.xdc] for cell 'design_1_i/calculator/not1_2'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_or6_0_0/design_1_or6_0_0/design_1_or6_0_0_in_context.xdc] for cell 'design_1_i/calculator/or6_0'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_or6_0_0/design_1_or6_0_0/design_1_or6_0_0_in_context.xdc] for cell 'design_1_i/calculator/or6_0'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_0_1/design_1_not1_0_1/design_1_not1_0_1_in_context.xdc] for cell 'design_1_i/calculator1/not1_0'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_0_1/design_1_not1_0_1/design_1_not1_0_1_in_context.xdc] for cell 'design_1_i/calculator1/not1_0'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_1_1/design_1_not1_1_1/design_1_not1_1_1_in_context.xdc] for cell 'design_1_i/calculator1/not1_1'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_1_1/design_1_not1_1_1/design_1_not1_1_1_in_context.xdc] for cell 'design_1_i/calculator1/not1_1'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_0_1/design_1_and3_0_1/design_1_and3_0_1_in_context.xdc] for cell 'design_1_i/calculator1/and3_0'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_0_1/design_1_and3_0_1/design_1_and3_0_1_in_context.xdc] for cell 'design_1_i/calculator1/and3_0'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and2_0_1/design_1_and2_0_1/design_1_and2_0_1_in_context.xdc] for cell 'design_1_i/calculator1/and2_0'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and2_0_1/design_1_and2_0_1/design_1_and2_0_1_in_context.xdc] for cell 'design_1_i/calculator1/and2_0'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and2_1_1/design_1_and2_1_1/design_1_and2_1_1_in_context.xdc] for cell 'design_1_i/calculator1/and2_1'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and2_1_1/design_1_and2_1_1/design_1_and2_1_1_in_context.xdc] for cell 'design_1_i/calculator1/and2_1'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_1_1/design_1_and3_1_1/design_1_and3_1_1_in_context.xdc] for cell 'design_1_i/calculator1/and3_1'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_1_1/design_1_and3_1_1/design_1_and3_1_1_in_context.xdc] for cell 'design_1_i/calculator1/and3_1'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_2_1/design_1_and3_2_1/design_1_and3_2_1_in_context.xdc] for cell 'design_1_i/calculator1/and3_2'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_2_1/design_1_and3_2_1/design_1_and3_2_1_in_context.xdc] for cell 'design_1_i/calculator1/and3_2'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_2_1/design_1_not1_2_1/design_1_not1_2_1_in_context.xdc] for cell 'design_1_i/calculator1/not1_2'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_2_1/design_1_not1_2_1/design_1_not1_2_1_in_context.xdc] for cell 'design_1_i/calculator1/not1_2'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_or6_0_1/design_1_or6_0_1/design_1_or6_0_1_in_context.xdc] for cell 'design_1_i/calculator1/or6_0'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_or6_0_1/design_1_or6_0_1/design_1_or6_0_1_in_context.xdc] for cell 'design_1_i/calculator1/or6_0'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_0_2/design_1_not1_0_2/design_1_not1_0_2_in_context.xdc] for cell 'design_1_i/calculator2/not1_0'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_0_2/design_1_not1_0_2/design_1_not1_0_2_in_context.xdc] for cell 'design_1_i/calculator2/not1_0'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_1_2/design_1_not1_1_2/design_1_not1_1_2_in_context.xdc] for cell 'design_1_i/calculator2/not1_1'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_1_2/design_1_not1_1_2/design_1_not1_1_2_in_context.xdc] for cell 'design_1_i/calculator2/not1_1'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_0_2/design_1_and3_0_2/design_1_and3_0_2_in_context.xdc] for cell 'design_1_i/calculator2/and3_0'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_0_2/design_1_and3_0_2/design_1_and3_0_2_in_context.xdc] for cell 'design_1_i/calculator2/and3_0'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and2_0_2/design_1_and2_0_2/design_1_and2_0_2_in_context.xdc] for cell 'design_1_i/calculator2/and2_0'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and2_0_2/design_1_and2_0_2/design_1_and2_0_2_in_context.xdc] for cell 'design_1_i/calculator2/and2_0'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and2_1_2/design_1_and2_1_2/design_1_and2_1_2_in_context.xdc] for cell 'design_1_i/calculator2/and2_1'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and2_1_2/design_1_and2_1_2/design_1_and2_1_2_in_context.xdc] for cell 'design_1_i/calculator2/and2_1'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_1_2/design_1_and3_1_2/design_1_and3_1_2_in_context.xdc] for cell 'design_1_i/calculator2/and3_1'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_1_2/design_1_and3_1_2/design_1_and3_1_2_in_context.xdc] for cell 'design_1_i/calculator2/and3_1'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_2_2/design_1_and3_2_2/design_1_and3_2_2_in_context.xdc] for cell 'design_1_i/calculator2/and3_2'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_2_2/design_1_and3_2_2/design_1_and3_2_2_in_context.xdc] for cell 'design_1_i/calculator2/and3_2'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_2_2/design_1_not1_2_2/design_1_not1_2_2_in_context.xdc] for cell 'design_1_i/calculator2/not1_2'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_2_2/design_1_not1_2_2/design_1_not1_2_2_in_context.xdc] for cell 'design_1_i/calculator2/not1_2'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_or6_0_2/design_1_or6_0_2/design_1_or6_0_2_in_context.xdc] for cell 'design_1_i/calculator2/or6_0'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_or6_0_2/design_1_or6_0_2/design_1_or6_0_2_in_context.xdc] for cell 'design_1_i/calculator2/or6_0'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_0_3/design_1_not1_0_3/design_1_not1_0_3_in_context.xdc] for cell 'design_1_i/calculator3/not1_0'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_0_3/design_1_not1_0_3/design_1_not1_0_3_in_context.xdc] for cell 'design_1_i/calculator3/not1_0'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_1_3/design_1_not1_1_3/design_1_not1_1_3_in_context.xdc] for cell 'design_1_i/calculator3/not1_1'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_1_3/design_1_not1_1_3/design_1_not1_1_3_in_context.xdc] for cell 'design_1_i/calculator3/not1_1'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_0_3/design_1_and3_0_3/design_1_and3_0_3_in_context.xdc] for cell 'design_1_i/calculator3/and3_0'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_0_3/design_1_and3_0_3/design_1_and3_0_3_in_context.xdc] for cell 'design_1_i/calculator3/and3_0'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and2_0_3/design_1_and2_0_3/design_1_and2_0_3_in_context.xdc] for cell 'design_1_i/calculator3/and2_0'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and2_0_3/design_1_and2_0_3/design_1_and2_0_3_in_context.xdc] for cell 'design_1_i/calculator3/and2_0'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and2_1_3/design_1_and2_1_3/design_1_and2_1_3_in_context.xdc] for cell 'design_1_i/calculator3/and2_1'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and2_1_3/design_1_and2_1_3/design_1_and2_1_3_in_context.xdc] for cell 'design_1_i/calculator3/and2_1'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_1_3/design_1_and3_1_3/design_1_and3_1_3_in_context.xdc] for cell 'design_1_i/calculator3/and3_1'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_1_3/design_1_and3_1_3/design_1_and3_1_3_in_context.xdc] for cell 'design_1_i/calculator3/and3_1'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_2_3/design_1_and3_2_3/design_1_and3_2_3_in_context.xdc] for cell 'design_1_i/calculator3/and3_2'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_and3_2_3/design_1_and3_2_3/design_1_and3_2_3_in_context.xdc] for cell 'design_1_i/calculator3/and3_2'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_2_3/design_1_not1_2_3/design_1_not1_2_3_in_context.xdc] for cell 'design_1_i/calculator3/not1_2'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_not1_2_3/design_1_not1_2_3/design_1_not1_2_3_in_context.xdc] for cell 'design_1_i/calculator3/not1_2'
+Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_or6_0_3/design_1_or6_0_3/design_1_or6_0_3_in_context.xdc] for cell 'design_1_i/calculator3/or6_0'
+Finished Parsing XDC File [d:/coding/computer_organization/exp/exp2.2/exp2.2.gen/sources_1/bd/design_1/ip/design_1_or6_0_3/design_1_or6_0_3/design_1_or6_0_3_in_context.xdc] for cell 'design_1_i/calculator3/or6_0'
+Parsing XDC File [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1242.148 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1242.148 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1242.148 ; gain = 577.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1242.148 ; gain = 577.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/cg_fpga_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/adpt_in_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/adpt_out_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator/not1_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator/not1_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator/and3_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator/and2_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator/and2_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator/and3_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator/and3_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator/not1_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator/or6_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator1/not1_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator1/not1_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator1/and3_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator1/and2_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator1/and2_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator1/and3_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator1/and3_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator1/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator1/not1_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator1/or6_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator2/not1_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator2/not1_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator2/and3_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator2/and2_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator2/and2_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator2/and3_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator2/and3_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator2/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator2/not1_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator2/or6_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator3/not1_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator3/not1_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator3/and3_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator3/and2_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator3/and2_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator3/and3_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator3/and3_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator3/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator3/not1_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/calculator3/or6_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1242.148 ; gain = 577.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1242.148 ; gain = 577.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1244.523 ; gain = 580.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1419.781 ; gain = 755.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1419.781 ; gain = 755.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1429.371 ; gain = 764.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1646.012 ; gain = 981.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1646.012 ; gain = 981.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1646.012 ; gain = 981.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1646.012 ; gain = 981.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1646.012 ; gain = 981.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1646.012 ; gain = 981.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------+----------+
+|      |BlackBox name         |Instances |
++------+----------------------+----------+
+|1     |design_1_adpt_in_0_0  |         1|
+|2     |design_1_adpt_out_0_0 |         1|
+|3     |design_1_cg_fpga_0_0  |         1|
+|4     |design_1_and2_0_0     |         1|
+|5     |design_1_and2_1_0     |         1|
+|6     |design_1_and3_0_0     |         1|
+|7     |design_1_and3_1_0     |         1|
+|8     |design_1_and3_2_0     |         1|
+|9     |design_1_not1_0_0     |         1|
+|10    |design_1_not1_1_0     |         1|
+|11    |design_1_not1_2_0     |         1|
+|12    |design_1_or6_0_0      |         1|
+|13    |design_1_and2_0_1     |         1|
+|14    |design_1_and2_1_1     |         1|
+|15    |design_1_and3_0_1     |         1|
+|16    |design_1_and3_1_1     |         1|
+|17    |design_1_and3_2_1     |         1|
+|18    |design_1_not1_0_1     |         1|
+|19    |design_1_not1_1_1     |         1|
+|20    |design_1_not1_2_1     |         1|
+|21    |design_1_or6_0_1      |         1|
+|22    |design_1_and2_0_2     |         1|
+|23    |design_1_and2_1_2     |         1|
+|24    |design_1_and3_0_2     |         1|
+|25    |design_1_and3_1_2     |         1|
+|26    |design_1_and3_2_2     |         1|
+|27    |design_1_not1_0_2     |         1|
+|28    |design_1_not1_1_2     |         1|
+|29    |design_1_not1_2_2     |         1|
+|30    |design_1_or6_0_2      |         1|
+|31    |design_1_and2_0_3     |         1|
+|32    |design_1_and2_1_3     |         1|
+|33    |design_1_and3_0_3     |         1|
+|34    |design_1_and3_1_3     |         1|
+|35    |design_1_and3_2_3     |         1|
+|36    |design_1_not1_0_3     |         1|
+|37    |design_1_not1_1_3     |         1|
+|38    |design_1_not1_2_3     |         1|
+|39    |design_1_or6_0_3      |         1|
++------+----------------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |design_1_adpt_in_0  |     1|
+|2     |design_1_adpt_out_0 |     1|
+|3     |design_1_and2_0     |     4|
+|7     |design_1_and2_1     |     4|
+|11    |design_1_and3_0     |     4|
+|15    |design_1_and3_1     |     4|
+|19    |design_1_and3_2     |     4|
+|23    |design_1_cg_fpga_0  |     1|
+|24    |design_1_not1_0     |     4|
+|28    |design_1_not1_1     |     4|
+|32    |design_1_not1_2     |     4|
+|36    |design_1_or6_0      |     4|
++------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1646.012 ; gain = 981.527
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 1646.012 ; gain = 981.527
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1646.012 ; gain = 981.527
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1646.012 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1658.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: b0cd2fc1
+INFO: [Common 17-83] Releasing license: Synthesis
+116 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:01:10 . Memory (MB): peak = 1662.746 ; gain = 1243.199
+INFO: [Common 17-1381] The checkpoint 'D:/coding/computer_organization/exp/exp2.2/exp2.2.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  7 15:04:27 2025...

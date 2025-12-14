@@ -1,0 +1,133 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Mar 27 10:23:04 2025
+# Process ID         : 16264
+# Current directory  : D:/coding/computer_organization/exp/exp6
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent13864 D:\coding\computer_organization\exp\exp6\exp6.xpr
+# Log file           : D:/coding/computer_organization/exp/exp6/vivado.log
+# Journal file       : D:/coding/computer_organization/exp/exp6\vivado.jou
+# Running On         : Celore
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 7735H with Radeon Graphics
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16368 MB
+# Swap memory        : 19327 MB
+# Total Virtual      : 35695 MB
+# Available Virtual  : 23444 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/coding/computer_organization/exp/exp6/exp6.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/coding/computer_organization/exp/exp6/exp6.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets adpt_in_0_D3] [get_bd_nets adpt_in_0_D2] [get_bd_nets adpt_in_0_D1] [get_bd_nets dff4_0_Q3] [get_bd_nets dff4_0_Q2] [get_bd_nets adpt_in_0_D0] [get_bd_nets adpt_in_0_clk] [get_bd_nets adpt_in_0_clr] [get_bd_nets dff4_0_Q1] [get_bd_nets dff4_0_Q0] [get_bd_cells dff4_0]
+set_property location {2.5 531 -249} [get_bd_cells m7482_0]
+set_property location {3 558 -51} [get_bd_cells m7482_1]
+create_bd_cell -type module -reference dff4 dff4_0
+set_property location {4.5 810 -283} [get_bd_cells dff4_0]
+connect_bd_net [get_bd_pins adpt_in_0/D3] [get_bd_pins m7482_0/A1]
+undo
+connect_bd_net [get_bd_pins adpt_in_0/D3] [get_bd_pins m7482_0/B2]
+connect_bd_net [get_bd_pins adpt_in_0/D2] [get_bd_pins m7482_0/B1]
+connect_bd_net [get_bd_pins adpt_in_0/D1] [get_bd_pins m7482_1/A2]
+undo
+connect_bd_net [get_bd_pins adpt_in_0/D1] [get_bd_pins m7482_1/B2]
+connect_bd_net [get_bd_pins adpt_in_0/D0] [get_bd_pins m7482_1/B1]
+connect_bd_net [get_bd_pins m7482_1/C2] [get_bd_pins m7482_0/C0]
+connect_bd_net [get_bd_pins dff4_0/Q3] [get_bd_pins m7482_0/A2]
+connect_bd_net [get_bd_pins dff4_0/Q2] [get_bd_pins m7482_0/A1]
+connect_bd_net [get_bd_pins dff4_0/Q1] [get_bd_pins m7482_1/A2]
+connect_bd_net [get_bd_pins dff4_0/Q0] [get_bd_pins m7482_1/A1]
+delete_bd_objs [get_bd_nets adpt_in_0_D3]
+delete_bd_objs [get_bd_nets adpt_in_0_D2]
+delete_bd_objs [get_bd_nets adpt_in_0_D1]
+delete_bd_objs [get_bd_nets adpt_in_0_D0]
+create_bd_cell -type module -reference xor2 xor2_0
+set_property location {3 407 -289} [get_bd_cells xor2_0]
+create_bd_cell -type module -reference xor2 xor2_1
+set_property location {3 407 -166} [get_bd_cells xor2_1]
+set_property location {3 407 -164} [get_bd_cells xor2_1]
+create_bd_cell -type module -reference xor2 xor2_2
+set_property location {3 402 -43} [get_bd_cells xor2_2]
+set_property location {3 399 -34} [get_bd_cells xor2_2]
+create_bd_cell -type module -reference xor2 xor2_3
+connect_bd_net [get_bd_pins adpt_in_0/D3] [get_bd_pins xor2_0/a]
+connect_bd_net [get_bd_pins adpt_in_0/D2] [get_bd_pins xor2_1/a]
+connect_bd_net [get_bd_pins adpt_in_0/D1] [get_bd_pins xor2_2/a]
+connect_bd_net [get_bd_pins adpt_in_0/D0] [get_bd_pins xor2_3/a]
+connect_bd_net [get_bd_pins adpt_in_0/K] [get_bd_pins xor2_0/b]
+connect_bd_net [get_bd_pins adpt_in_0/K] [get_bd_pins xor2_1/b]
+connect_bd_net [get_bd_pins adpt_in_0/K] [get_bd_pins xor2_2/b]
+connect_bd_net [get_bd_pins adpt_in_0/D0] [get_bd_pins xor2_3/b]
+undo
+connect_bd_net [get_bd_pins adpt_in_0/K] [get_bd_pins xor2_3/b]
+connect_bd_net [get_bd_pins adpt_in_0/K] [get_bd_pins m7482_1/C0]
+connect_bd_net [get_bd_pins xor2_0/y] [get_bd_pins m7482_0/B2]
+connect_bd_net [get_bd_pins xor2_1/y] [get_bd_pins m7482_0/B1]
+connect_bd_net [get_bd_pins xor2_2/y] [get_bd_pins m7482_1/B2]
+connect_bd_net [get_bd_pins xor2_3/y] [get_bd_pins m7482_1/B1]
+connect_bd_net [get_bd_pins m7482_0/SUM2] [get_bd_pins dff4_0/D3]
+connect_bd_net [get_bd_pins m7482_0/SUM1] [get_bd_pins dff4_0/D2]
+connect_bd_net [get_bd_pins m7482_1/SUM2] [get_bd_pins dff4_0/D1]
+connect_bd_net [get_bd_pins m7482_1/SUM1] [get_bd_pins dff4_0/D0]
+connect_bd_net [get_bd_pins adpt_in_0/clk] [get_bd_pins dff4_0/clk]
+connect_bd_net [get_bd_pins adpt_in_0/clr] [get_bd_pins dff4_0/clr]
+connect_bd_net [get_bd_pins dff4_0/Q3] [get_bd_pins adpt_out_0/SUM3]
+connect_bd_net [get_bd_pins dff4_0/Q2] [get_bd_pins adpt_out_0/SUM2]
+connect_bd_net [get_bd_pins dff4_0/Q1] [get_bd_pins adpt_out_0/SUM1]
+connect_bd_net [get_bd_pins dff4_0/Q1] [get_bd_pins adpt_out_0/SUM0]
+undo
+connect_bd_net [get_bd_pins dff4_0/Q0] [get_bd_pins adpt_out_0/SUM0]
+undo
+connect_bd_net [get_bd_pins adpt_out_0/SUM0] [get_bd_pins dff4_0/Q0]
+connect_bd_net [get_bd_pins adpt_out_0/led] [get_bd_pins cg_fpga_0/gpio_led]
+create_bd_cell -type module -reference xor2 xor2_4
+connect_bd_net [get_bd_pins m7482_0/C2] [get_bd_pins xor2_4/b]
+connect_bd_net [get_bd_pins dff4_0/Q3] [get_bd_pins xor2_4/a]
+connect_bd_net [get_bd_pins xor2_4/y] [get_bd_pins adpt_out_0/OF]
+set_property location {5 869 -5} [get_bd_cells xor2_4]
+regenerate_bd_layout
+make_wrapper -files [get_files D:/coding/computer_organization/exp/exp6/exp6.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse d:/coding/computer_organization/exp/exp6/exp6.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+disconnect_bd_net /dff4_0_Q3 [get_bd_pins xor2_4/a]
+connect_bd_net [get_bd_pins xor2_4/a] [get_bd_pins m7482_0/SUM2]
+disconnect_bd_net /dff4_0_Q3 [get_bd_pins adpt_out_0/SUM3]
+disconnect_bd_net /dff4_0_Q2 [get_bd_pins adpt_out_0/SUM2]
+disconnect_bd_net /dff4_0_Q1 [get_bd_pins adpt_out_0/SUM1]
+disconnect_bd_net /dff4_0_Q0 [get_bd_pins adpt_out_0/SUM0]
+startgroup
+connect_bd_net [get_bd_pins adpt_out_0/SUM3] [get_bd_pins m7482_0/SUM2]
+connect_bd_net [get_bd_pins m7482_0/SUM2] [get_bd_pins adpt_out_0/SUM0]
+endgroup
+disconnect_bd_net /m7482_0_SUM2 [get_bd_pins adpt_out_0/SUM3]
+disconnect_bd_net /m7482_0_SUM2 [get_bd_pins adpt_out_0/SUM0]
+connect_bd_net [get_bd_pins adpt_out_0/SUM3] [get_bd_pins m7482_0/SUM2]
+connect_bd_net [get_bd_pins adpt_out_0/SUM2] [get_bd_pins m7482_0/SUM1]
+connect_bd_net [get_bd_pins adpt_out_0/SUM1] [get_bd_pins m7482_1/SUM2]
+connect_bd_net [get_bd_pins adpt_out_0/SUM0] [get_bd_pins m7482_1/SUM1]
+make_wrapper -files [get_files D:/coding/computer_organization/exp/exp6/exp6.srcs/sources_1/bd/design_1/design_1.bd] -top
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+disconnect_bd_net /m7482_1_SUM1 [get_bd_pins adpt_out_0/SUM0]
+disconnect_bd_net /m7482_1_SUM2 [get_bd_pins adpt_out_0/SUM1]
+disconnect_bd_net /m7482_0_SUM1 [get_bd_pins adpt_out_0/SUM2]
+disconnect_bd_net /m7482_0_SUM2 [get_bd_pins adpt_out_0/SUM3]
+connect_bd_net [get_bd_pins adpt_out_0/SUM3] [get_bd_pins dff4_0/Q3]
+connect_bd_net [get_bd_pins adpt_out_0/SUM2] [get_bd_pins dff4_0/Q2]
+connect_bd_net [get_bd_pins adpt_out_0/SUM1] [get_bd_pins dff4_0/Q1]
+connect_bd_net [get_bd_pins adpt_out_0/SUM0] [get_bd_pins dff4_0/Q0]
+disconnect_bd_net /m7482_0_SUM2 [get_bd_pins xor2_4/a]
+connect_bd_net [get_bd_pins xor2_4/a] [get_bd_pins dff4_0/Q3]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
